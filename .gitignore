@@ -65,15 +65,6 @@ FOVCircle.Transparency = 1
 -- ESP объекты
 local ESPObjects = {}
 local OriginalHitboxSizes = {}
-
--- Проверка тиммейта
-local function IsTeammate(Player)
-    if not Settings.Aimbot.TeamCheck then return false end
-    if Player == LocalPlayer then return true end
-    if Settings.Aimbot.TeamCheckMode == "TeamColor" then
-        return Player.TeamColor == LocalPlayer.TeamColor
-    else
-        return Player.Team == LocalPlayer.Team
     end
 end
 
