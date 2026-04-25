@@ -357,10 +357,5 @@ VHTab:CreateColorPicker({Name = "Skeleton Color", Color = Color3.fromRGB(255,165
 VisualTab:CreateToggle({Name = "Show FOV", CurrentValue = true, Callback = function(v) Settings.FOV.Show = v end})
 VisualTab:CreateSlider({Name = "FOV Radius", Range = {50, 500}, Increment = 10, CurrentValue = 200, Callback = function(v) Settings.FOV.Radius = v end})
 
-HitboxTab:CreateToggle({Name = "Hitbox Enabled", CurrentValue = false, Callback = function(v) Settings.Hitbox.Enabled = v end})
-HitboxTab:CreateSlider({Name = "Hitbox Size", Range = {2, 15}, Increment = 0.5, CurrentValue = 5, Callback = function(v) Settings.Hitbox.Size = v end})
-HitboxTab:CreateSlider({Name = "Hitbox Transparency", Range = {0, 1}, Increment = 0.1, CurrentValue = 0.7, Callback = function(v) Settings.Hitbox.Transparency = v end})
-HitboxTab:CreateDropdown({Name = "Hitbox Part", Options = {"Head", "HumanoidRootPart"}, CurrentOption = "Head", Callback = function(o) Settings.Hitbox.Part = o end})
-
 Rayfield:Notify({Title = "SWILL Menu Fixed", Content = "Меню полностью восстановлено. Все функции на месте.", Duration = 10})
-print("SWILL запущен — меню теперь с функциями!")
+
