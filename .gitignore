@@ -32,7 +32,7 @@ local HitboxTab = Window:CreateTab("Hitbox", 4483362458)
 local Settings = {
     Aimbot = {
         Enabled = true,
-        TeamCheck = false,
+        TeamCheck = true,
         TeamCheckMode = "TeamColor",
         VisibleCheck = true,
         AimPart = "Head",
@@ -42,9 +42,9 @@ local Settings = {
     ESP = {
         Enabled = true,
         Box = true,
-        Tracer = false,
+        Tracer = true,
         Skeleton = true,
-        FootTracer = false,
+        FootTracer = true,
         HealthBar = true,
         Distance = true,
         EnemyColor = Color3.fromRGB(255,0,0),
@@ -65,6 +65,15 @@ FOVCircle.Transparency = 1
 -- ESP объекты
 local ESPObjects = {}
 local OriginalHitboxSizes = {}
+
+-- Проверка тиммейта
+local function IsTeammate(Player)
+    if not Settings.Aimbot.TeamCheck then return false end
+    if Player == LocalPlayer then return true end
+    if Settings.Aimbot.TeamCheckMode == "TeamColor" then
+        return Player.TeamColor == LocalPlayer.TeamColor
+    else
+        return Player.Team == LocalPlayer.Team
     end
 end
 
@@ -328,6 +337,8 @@ end)
 
 -- === МЕНЮ (теперь точно появится) ===
 MainTab:CreateToggle({Name = "Aimbot Enabled", CurrentValue = true, Callback = function(v) Settings.Aimbot.Enabled = v end})
+MainTab:CreateToggle({Name = "Team Check", CurrentValue = true, Callback = function(v) Settings.Aimbot.TeamCheck = v Settings.Trigger.TeamCheck = v end})
+MainTab:CreateDropdown({Name = "Team Check Mode", Options = {"TeamColor", "Team"}, CurrentOption = "TeamColor", Callback = function(o) Settings.Aimbot.TeamCheckMode = o end})
 MainTab:CreateToggle({Name = "Visible Check", CurrentValue = true, Callback = function(v) Settings.Aimbot.VisibleCheck = v end})
 MainTab:CreateDropdown({Name = "Aim Part", Options = {"Head", "HumanoidRootPart"}, CurrentOption = "Head", Callback = function(o) Settings.Aimbot.AimPart = o end})
 MainTab:CreateSlider({Name = "Aim Speed (1=плавно, 10=мгновенно)", Range = {1, 10}, Increment = 1, CurrentValue = 10, Callback = function(v) Settings.Aimbot.AimSpeed = v end})
@@ -348,5 +359,10 @@ VHTab:CreateColorPicker({Name = "Skeleton Color", Color = Color3.fromRGB(255,165
 VisualTab:CreateToggle({Name = "Show FOV", CurrentValue = true, Callback = function(v) Settings.FOV.Show = v end})
 VisualTab:CreateSlider({Name = "FOV Radius", Range = {50, 500}, Increment = 10, CurrentValue = 200, Callback = function(v) Settings.FOV.Radius = v end})
 
-Rayfield:Notify({Title = "SWILL Menu Fixed", Content = "Меню полностью восстановлено. Все функции на месте.", Duration = 10})
+HitboxTab:CreateToggle({Name = "Hitbox Enabled", CurrentValue = false, Callback = function(v) Settings.Hitbox.Enabled = v end})
+HitboxTab:CreateSlider({Name = "Hitbox Size", Range = {2, 15}, Increment = 0.5, CurrentValue = 5, Callback = function(v) Settings.Hitbox.Size = v end})
+HitboxTab:CreateSlider({Name = "Hitbox Transparency", Range = {0, 1}, Increment = 0.1, CurrentValue = 0.7, Callback = function(v) Settings.Hitbox.Transparency = v end})
+HitboxTab:CreateDropdown({Name = "Hitbox Part", Options = {"Head", "HumanoidRootPart"}, CurrentOption = "Head", Callback = function(o) Settings.Hitbox.Part = o end})
 
+Rayfield:Notify({Title = "SWILL Menu Fixed", Content = "Меню полностью восстановлено. Все функции на месте.", Duration = 10})
+print("SWILL запущен — меню теперь с функциями!")
