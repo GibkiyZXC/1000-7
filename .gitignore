@@ -337,8 +337,6 @@ end)
 
 -- === МЕНЮ (теперь точно появится) ===
 MainTab:CreateToggle({Name = "Aimbot Enabled", CurrentValue = true, Callback = function(v) Settings.Aimbot.Enabled = v end})
-MainTab:CreateToggle({Name = "Team Check", CurrentValue = true, Callback = function(v) Settings.Aimbot.TeamCheck = v Settings.Trigger.TeamCheck = v end})
-MainTab:CreateDropdown({Name = "Team Check Mode", Options = {"TeamColor", "Team"}, CurrentOption = "TeamColor", Callback = function(o) Settings.Aimbot.TeamCheckMode = o end})
 MainTab:CreateToggle({Name = "Visible Check", CurrentValue = true, Callback = function(v) Settings.Aimbot.VisibleCheck = v end})
 MainTab:CreateDropdown({Name = "Aim Part", Options = {"Head", "HumanoidRootPart"}, CurrentOption = "Head", Callback = function(o) Settings.Aimbot.AimPart = o end})
 MainTab:CreateSlider({Name = "Aim Speed (1=плавно, 10=мгновенно)", Range = {1, 10}, Increment = 1, CurrentValue = 10, Callback = function(v) Settings.Aimbot.AimSpeed = v end})
