@@ -1,4 +1,4 @@
--- SWILL Auto Triggerbot + Полностью исправленное меню Rayfield + Instant Aimbot + ESP + Hitbox
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -12,7 +12,405 @@ end
 
 -- Загрузка Rayfield
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+gibkiy_morch
+gibkiy_morch
+Не беспокоить
 
+JuniperBot
+БОТ
+ — 28.03.2023 13:23
+ra40k покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 30.03.2023 11:44
+✧★NiGo-CTRL★✧ покинул клуб рай прайм :(
+Чара покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 20.04.2023 19:28
+Rusik337 покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 04.05.2023 21:48
+Qupruuum покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 04.06.2023 21:38
+andrey_channel покинул клуб рай прайм :(
+Boombl4 покинул клуб рай прайм :(
+WRTY покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 06.11.2023 17:50
+SAS покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 11.11.2023 12:07
+негрик покинул клуб рай прайм :(
+gibkiy_morch — 26.11.2023 21:38
+"Штурмовая винтовка" 
+8
+"8x прицел"
+5.56
+JuniperBot
+БОТ
+ — 14.01.2024 19:46
+zhenyagame покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 26.02.2024 5:35
+ibraxim покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 16.04.2024 15:48
+yt_love_kraft_yt покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 09.07.2024 8:45
+frozzzi_ покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 18.06.2025 22:25
+deadinsid5282 покинул клуб рай прайм :(
+rbyba. покинул клуб рай прайм :(
+nadirochka4879 покинул клуб рай прайм :(
+dvdvshchv8763 покинул клуб рай прайм :(
+rtx2952 покинул клуб рай прайм :(
+tobi_van покинул клуб рай прайм :(
+JuniperBot
+БОТ
+ — 22.11.2025 17:13
+339🦟 покинул клуб рай прайм :(
+gibkiy_morch — 26.12.2025 0:12
+-- SWILL Auto Triggerbot + Полностью исправленное меню Rayfield + Instant Aimbot + ESP + Hitbox
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local Camera = workspace.CurrentCamera
+local LocalPlayer = Players.LocalPlayer
+
+message.txt
+18 кб
+gibkiy_morch — 03.01.2026 0:27
+Изображение
+gibkiy_morch — 18.01.2026 10:54
+if not getgenv().ScriptExecuted then --для того чтобы людишки по 40 раз не спамили вебхуком при инжекте, если хочешь убери
+    getgenv().ScriptExecuted = true
+
+    local OSTime = os.time()
+    local Time = os.date('!*t', OSTime)
+    local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png'
+    local Content = 'Tsunami executed.' --свой текст 
+
+    local Embed = {
+        title = game:GetService("Players").LocalPlayer.Name,
+        color = 0x00ff00,
+        footer = {text = game.JobId},
+        author = {
+            name = 'Universal',
+            url = 'https://www.roblox.com/',
+            icon_url = Avatar
+        },
+        fields = {
+            {
+                name = 'Client ID:',
+                value = game:GetService("RbxAnalyticsService"):GetClientId(),
+                inline = true
+            },
+            {
+                name = 'Job ID:',
+                value = game.JobId,
+                inline = true
+            },
+            {
+                name = 'Execution Time:',
+                value = os.date('%Y-%m-%d %H:%M:%S UTC', OSTime),
+                inline = true
+            }
+        },
+        timestamp = string.format('%d-%02d-%02dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec)
+    }
+
+    (syn and syn.request or http_request or request or http.request) {
+        Url = 'https://discord.com/api/webhooks/1474419400030294277/6RHJSrWrO6N4dVM6FNUlIvKJUEtn7E2nKe4_x62W_Kii-P9W8oBzS3tykxbNB6pJTsAB', --замени тут на свой вебхук
+        Method = 'POST',
+        Headers = {['Content-Type'] = 'application/json'},
+        Body = game:GetService('HttpService'):JSONEncode({
+            content = Content,
+            embeds = {Embed}
+        })
+    }
+end 
+gibkiy_morch — 22.01.2026 13:04
+/help
+gibkiy_morch — 29.01.2026 12:43
+--// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--//          SWILL SUPER VISUAL PLAYER ESP v2.1 – 2025 Edition
+--//          яркий, плавный, с градиентами здоровья и скелетом
+--// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+local Players        = game:GetService("Players")
+
+message.txt
+12 кб
+gibkiy_morch — 30.01.2026 0:23
+123
+123
+kit
+дайте пожалуйста-ключ
+/дайте пожалуйста-ключ
+gibkiy_morch — 30.01.2026 0:33
+⁠🔑key⁠
+⁠key⁠
+дайте пожалуйста-ключ
+ключ
+TSM
+БОТ
+ — 30.01.2026 0:38
+#⁠🔑key⁠
+TSM
+БОТ
+ — 30.01.2026 0:42
+как ключ получить?
+Cb key #🔑key⁠
+gibkiy_morch — 30.01.2026 0:44
+/key
+TSM
+БОТ
+ — 30.01.2026 0:45
+Cb key -⁠#🔑key⁠
+gibkiy_morch — 18.02.2026 19:13
+https://discord.com/api/webhooks/1468663830073708695/ZKpYygVg5aHbGoRenfo5D3ehxoabxg5E4ybnZAmG9jQEYUZ32elPGrQBB2PbgZpcT-br
+--// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--// SWILL SUPER VISUAL PLAYER ESP v2.1 – 2025 Edition (Optimized)
+--// яркий, плавный, с градиентами здоровья и скелетом
+--// Оптимизации: Использование GetBoundingBox для снижения проекций, удаление неиспользуемого Tracer
+--// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+local Players = game:GetService("Players")
+
+message.txt
+11 кб
+gibkiy_morch — 18.02.2026 20:04
+-- Updated Aimbot Script with MOUSE MOVEMENT SIMULATION for natural aiming
+-- Now uses mousemoverel (exploit function) to simulate mouse input, rotating character/camera naturally
+-- This fixes "only crosshair aiming" issue in games like The Wild West where direct camera lerp may not align character direction
+-- Assumes executor supports mousemoverel (e.g., Synapse, Krnl)
+
+if getgenv and getgenv().AimbotLoaded then
+
+message.txt
+8 кб
+gibkiy_morch — 19.02.2026 23:18
+Изображение
+Изображение
+gibkiy_morch — 27.02.2026 22:56
+local HitmarkerFolder=SoundService:WaitForChild("Game"):WaitForChild("Local"):WaitForChild("Hitmarker")
+local HitmarkerSound=HitmarkerFolder:WaitForChild("Hitmarker")
+local KillSound=HitmarkerFolder:WaitForChild("Kill")
+local HeadshotKillSound=HitmarkerFolder:WaitForChild("HeadshotKill")
+gibkiy_morch — 02.03.2026 8:07
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local Stats = game:GetService("Stats")
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+message.txt
+10 кб
+gibkiy_morch — 10.03.2026 9:27
+{FFFFFF}Кинг Стикман[224] говорит:{B7AFAF} Я даю клятву гипократа,что не рассекречу тайты государственого учреждения здравоохранения
+gibkiy_morch — 19.04.2026 0:39
+--// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--// SWILL ESP v2.2 – Optimized Edition
+--// Оптимизации:
+--//   • Throttle обновлений (не каждый кадр на дальних игроков)
+--//   • Кэш персонажей (не ищем заново каждый кадр)
+--//   • Один проход по углам bounding box
+
+message.txt
+12 кб
+gibkiy_morch — 19.04.2026 15:42
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local Stats = game:GetService("Stats")
+
+message.txt
+36 кб
+gibkiy_morch — 21.04.2026 21:23
+https://discord.com/api/webhooks/1496214801498636360/3u_OPRglAM2oELZx9KkQTqw0EccwoAD-hfIspoNmkIxcRSCDhLx28np1FM76pQf4P7DV
+gibkiy_morch — 23.04.2026 12:51
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- ==================== CUSTOM KEY MENU - Final Version ====================
+local correctKey = "TS-JJIkfoAJIDokd9K291"   -- ← Твой ключ
+local discordLink = "https://discord.gg/3X64JmSWsa"
+
+message.txt
+43 кб
+﻿
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- ==================== CUSTOM KEY MENU - Final Version ====================
+local correctKey = "TS-JJIkfoAJIDokd9K291"   -- ← Твой ключ
+local discordLink = "https://discord.gg/3X64JmSWsa"
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local Stats = game:GetService("Stats")
+local Lighting = game:GetService("Lighting")
+local Camera = workspace.CurrentCamera
+local LocalPlayer = Players.LocalPlayer
+
+-- Локализация функций для максимального FPS
+local v2, v3 = Vector2.new, Vector3.new
+local math_abs, math_clamp, math_floor = math.abs, math.clamp, math.floor
+local WTVP = Camera.WorldToViewportPoint
+
+if LocalPlayer.PlayerGui:FindFirstChild("CustomKeyGui") then
+    LocalPlayer.PlayerGui.CustomKeyGui:Destroy()
+end
+
+local keyGui = Instance.new("ScreenGui")
+keyGui.Name = "CustomKeyGui"
+keyGui.ResetOnSpawn = false
+keyGui.Parent = LocalPlayer.PlayerGui
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0, 440, 0, 340)
+mainFrame.Position = UDim2.new(0.5, -220, 0.5, -170)
+mainFrame.BackgroundColor3 = Color3.fromRGB(18, 18, 20)
+mainFrame.BorderSizePixel = 0
+mainFrame.Parent = keyGui
+
+Instance.new("UICorner", mainFrame).CornerRadius = UDim.new(0, 18)
+
+local stroke = Instance.new("UIStroke", mainFrame)
+stroke.Color = Color3.fromRGB(255, 55, 55)
+stroke.Thickness = 3
+
+-- Title
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 80)
+title.BackgroundTransparency = 1
+title.Text = "perplexity.win"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 34
+title.Font = Enum.Font.GothamBold
+title.Parent = mainFrame
+
+-- Subtitle
+local subtitle = Instance.new("TextLabel")
+subtitle.Size = UDim2.new(1, 0, 0, 40)
+subtitle.Position = UDim2.new(0, 0, 0, 75)
+subtitle.BackgroundTransparency = 1
+subtitle.Text = "Key is located in our Discord server"
+subtitle.TextColor3 = Color3.fromRGB(170, 170, 180)
+subtitle.TextSize = 16
+subtitle.Font = Enum.Font.Gotham
+subtitle.Parent = mainFrame
+
+-- Key input
+local keyBox = Instance.new("TextBox")
+keyBox.Size = UDim2.new(0.85, 0, 0, 58)
+keyBox.Position = UDim2.new(0.075, 0, 0, 135)
+keyBox.BackgroundColor3 = Color3.fromRGB(28, 28, 32)
+keyBox.PlaceholderText = "Paste your key here..."
+keyBox.Text = ""
+keyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keyBox.TextSize = 19
+keyBox.Font = Enum.Font.Gotham
+keyBox.ClearTextOnFocus = false
+keyBox.Parent = mainFrame
+Instance.new("UICorner", keyBox).CornerRadius = UDim.new(0, 12)
+
+-- Verify button
+local submitBtn = Instance.new("TextButton")
+submitBtn.Size = UDim2.new(0.85, 0, 0, 58)
+submitBtn.Position = UDim2.new(0.075, 0, 0, 205)
+submitBtn.BackgroundColor3 = Color3.fromRGB(255, 55, 55)
+submitBtn.Text = "Verify Key"
+submitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+submitBtn.TextSize = 19
+submitBtn.Font = Enum.Font.GothamBold
+submitBtn.Parent = mainFrame
+Instance.new("UICorner", submitBtn).CornerRadius = UDim.new(0, 12)
+
+-- Discord button
+local discordBtn = Instance.new("TextButton")
+discordBtn.Size = UDim2.new(0.85, 0, 0, 50)
+discordBtn.Position = UDim2.new(0.075, 0, 0, 275)
+discordBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+discordBtn.Text = "Copy & Join Discord"
+discordBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+discordBtn.TextSize = 17
+discordBtn.Font = Enum.Font.GothamBold
+discordBtn.Parent = mainFrame
+Instance.new("UICorner", discordBtn).CornerRadius = UDim.new(0, 12)
+
+-- Shake effect on wrong key
+local function shakeFrame()
+    local original = mainFrame.Position
+    for i = 1, 8 do
+        local xOffset = (i % 2 == 0) and 18 or -18
+        TweenService:Create(mainFrame, TweenInfo.new(0.05, Enum.EasingStyle.Sine), {
+            Position = UDim2.new(original.X.Scale, original.X.Offset + xOffset, original.Y.Scale, original.Y.Offset)
+        }):Play()
+        task.wait(0.05)
+    end
+    mainFrame.Position = original
+end
+
+-- Check key and launch main script
+local function checkKey()
+    local entered = keyBox.Text:gsub("%s+", "")
+    
+    if entered == correctKey then
+        keyGui:Destroy()
+        loadMainScript()  -- ← Запускаем основной скрипт
+    else
+        shakeFrame()
+        keyBox.Text = ""
+        submitBtn.BackgroundColor3 = Color3.fromRGB(180, 0, 0)
+        submitBtn.Text = "Invalid Key!"
+        task.wait(1.3)
+        submitBtn.BackgroundColor3 = Color3.fromRGB(255, 55, 55)
+        submitBtn.Text = "Verify Key"
+    end
+end
+
+-- Join Discord
+local function joinDiscord()
+    setclipboard(discordLink)
+    
+    pcall(function()
+        game:GetService("GuiService"):OpenBrowserWindow(discordLink)
+    end)
+
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Discord",
+        Text = "Link copied!\nDiscord should open automatically.",
+        Duration = 5
+    })
+end
+
+-- Connections for key GUI
+submitBtn.MouseButton1Click:Connect(checkKey)
+discordBtn.MouseButton1Click:Connect(joinDiscord)
+
+keyBox.FocusLost:Connect(function(enter) 
+    if enter then checkKey() end 
+end)
+
+UserInputService.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.Escape and keyGui.Parent then
+        keyGui:Destroy()
+    end
+end)
 -- Окно
 local Window = Rayfield:CreateWindow({
     Name = "SWILL Auto Trigger",
